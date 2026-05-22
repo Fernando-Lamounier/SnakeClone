@@ -5,8 +5,6 @@ var direction = Vector2()
 
 func _process(delta: float) -> void:
 	
-	
-	
 	if Input.is_action_just_pressed("ui_left"):
 		direction.x = -1
 		direction.y = 0

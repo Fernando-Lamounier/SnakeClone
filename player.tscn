@@ -9,6 +9,7 @@ height = 20.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1582700225]
 script = ExtResource("1_4flbx")
+SPEED = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1008155489]
 position = Vector2(3.5762787e-07, 0)
