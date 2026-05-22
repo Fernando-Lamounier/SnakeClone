@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="SnakeClone"
-run/main_scene="res://Mapa.tscn"
+run/main_scene="uid://bhugmgt5xl2qu"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/mode=3
 
 [physics]
 

@@ -1,9 +1,13 @@
-[gd_scene format=3 uid="uid://bhfbvlh0qtopl"]
+[gd_scene format=3 uid="uid://bhugmgt5xl2qu"]
 
 [ext_resource type="PackedScene" uid="uid://de5k8qt7jh7a4" path="res://player.tscn" id="1_lbiw5"]
+[ext_resource type="PackedScene" uid="uid://dhqpon64nio8" path="res://fruta.tscn" id="2_qgw4m"]
 
 [node name="Node2D" type="Node2D" unique_id=552204158]
 
 [node name="Player" parent="." unique_id=1582700225 instance=ExtResource("1_lbiw5")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1907149125]
+
+[node name="fruta" parent="." unique_id=1240248615 instance=ExtResource("2_qgw4m")]
+position = Vector2(96, 0)

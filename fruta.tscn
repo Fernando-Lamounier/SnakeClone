@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dhqpon64nio8"]
+
+[ext_resource type="Script" uid="uid://qsfgivd6hqjj" path="res://fruta.gd" id="1_yhoih"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_iyu3a"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yhoih"]
+height = 20.0
+
+[node name="fruta" type="Area2D" unique_id=1240248615]
+script = ExtResource("1_yhoih")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1525013617]
+scale = Vector2(20, 20)
+texture = SubResource("PlaceholderTexture2D_iyu3a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=655182044]
+shape = SubResource("CapsuleShape2D_yhoih")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
