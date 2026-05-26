@@ -2,11 +2,20 @@
 
 [ext_resource type="Script" uid="uid://c1diqdal5esgv" path="res://scripts/player.gd" id="1_qhqgy"]
 [ext_resource type="PackedScene" uid="uid://bgtwacnhs8vly" path="res://scenes/head.tscn" id="2_dqkch"]
+[ext_resource type="PackedScene" uid="uid://dt7py8w6xqcf0" path="res://scenes/segment.tscn" id="3_qhqgy"]
+[ext_resource type="Script" uid="uid://cseupf4w0q7ar" path="res://scripts/spawner.gd" id="4_dqkch"]
 
 [node name="Player" type="Node2D" unique_id=2059443134]
 script = ExtResource("1_qhqgy")
 
 [node name="Head" parent="." unique_id=1658098063 instance=ExtResource("2_dqkch")]
 unique_name_in_owner = true
+
+[node name="Segment" parent="." unique_id=2041569768 instance=ExtResource("3_qhqgy")]
+unique_name_in_owner = true
+
+[node name="Spawner" type="Node2D" parent="." unique_id=357328250]
+unique_name_in_owner = true
+script = ExtResource("4_dqkch")
 
 [connection signal="food_eated" from="Head" to="." method="_on_head_food_eated"]
