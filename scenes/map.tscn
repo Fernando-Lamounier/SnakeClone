@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bdvkdma871fnt"]
+
+[ext_resource type="PackedScene" uid="uid://cgxvsmw8ujkfg" path="res://scenes/player.tscn" id="1_paxxb"]
+[ext_resource type="PackedScene" uid="uid://dhqpon64nio8" path="res://scenes/fruta.tscn" id="2_gldc4"]
+[ext_resource type="Script" uid="uid://cseupf4w0q7ar" path="res://scripts/spawner.gd" id="3_gldc4"]
+
+[node name="map" type="Node2D" unique_id=552204158]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1907149125]
+
+[node name="Fruta" parent="." unique_id=1240248615 instance=ExtResource("2_gldc4")]
+unique_name_in_owner = true
+
+[node name="Player" parent="." unique_id=2059443134 instance=ExtResource("1_paxxb")]
+
+[node name="Spawner" type="Node2D" parent="." unique_id=1317647113]
+unique_name_in_owner = true
+script = ExtResource("3_gldc4")

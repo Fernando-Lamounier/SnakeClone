@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dt7py8w6xqcf0"]
+
+[ext_resource type="Script" uid="uid://dvi8b1swt6mbe" path="res://scripts/segment.gd" id="1_th87o"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_u8vuu"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3vyb7"]
+height = 20.0
+
+[node name="Segment" type="Area2D" unique_id=2041569768]
+script = ExtResource("1_th87o")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1938380057]
+position = Vector2(3.5762787e-07, 0)
+scale = Vector2(20, 20)
+texture = SubResource("PlaceholderTexture2D_u8vuu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1913175056]
+shape = SubResource("CapsuleShape2D_3vyb7")

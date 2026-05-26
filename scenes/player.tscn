@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cgxvsmw8ujkfg"]
+
+[ext_resource type="Script" uid="uid://c1diqdal5esgv" path="res://scripts/player.gd" id="1_qhqgy"]
+[ext_resource type="PackedScene" uid="uid://bgtwacnhs8vly" path="res://scenes/head.tscn" id="2_dqkch"]
+
+[node name="Player" type="Node2D" unique_id=2059443134]
+script = ExtResource("1_qhqgy")
+
+[node name="Head" parent="." unique_id=1658098063 instance=ExtResource("2_dqkch")]
+unique_name_in_owner = true
+
+[connection signal="food_eated" from="Head" to="." method="_on_head_food_eated"]

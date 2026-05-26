@@ -11,15 +11,22 @@ config_version=5
 [application]
 
 config/name="SnakeClone"
-run/main_scene="uid://bhugmgt5xl2qu"
+run/main_scene="uid://bdvkdma871fnt"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Global="*uid://dmtwp2m6ydqcg"
 
 [display]
 
 window/size/viewport_width=1920
-window/size/viewport_height=1080
-window/size/mode=3
+window/size/viewport_height=1060
+
+[global_group]
+
+food=""
 
 [physics]
 
@@ -27,4 +34,5 @@ window/size/mode=3
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
