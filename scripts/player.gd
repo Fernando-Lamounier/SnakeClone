@@ -13,6 +13,8 @@ var time_between_moves:float = 1000
 var snake_segment:Array[Segment] = []
 var direction: Vector2 = Vector2.RIGHT
 
+func _ready() -> void:
+	snake_segment.append(segment)
 
 # pega a direção da cobra
 func _process(delta: float) -> void:
@@ -39,15 +41,29 @@ func update_head():
 	var last_position = head.position
 	var new_position:Vector2 = head.position + direction * Global.GRID_SIZE
 	head.move_to(new_position)
-	if last_position != segment.position:
-		segment.move_to(last_position)
-		last_position = new_position
+	head.walked()
+	for i in snake_segment.size():
+		
+		if snake_segment[i].position != last_position:
+			new_position = snake_segment[i].position
+			snake_segment[i].move_to(last_position)
+			last_position = new_position
+			
+			pass
 		pass
+	
 	pass
 
 # recebe o emit ao comer uma comida 
 func _on_head_food_eated() -> void:
 	spawner.spawn_food()
-	spawner.spawn_segment(head.position)
+	snake_segment.append(spawner.spawn_segment(snake_segment.back().position))
 	pass
 	
+
+func game_over():
+	head.queue_free()
+	for i in snake_segment.size():
+		snake_segment[i].queue_free()
+	queue_free()
+	pass

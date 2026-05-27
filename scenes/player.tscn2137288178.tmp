@@ -18,6 +18,4 @@ unique_name_in_owner = true
 unique_name_in_owner = true
 script = ExtResource("4_dqkch")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=68352039]
-
 [connection signal="food_eated" from="Head" to="." method="_on_head_food_eated"]

@@ -5,8 +5,6 @@
 
 [node name="map" type="Node2D" unique_id=552204158]
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1907149125]
-
 [node name="Fruta" parent="." unique_id=1240248615 instance=ExtResource("2_gldc4")]
 unique_name_in_owner = true
 
