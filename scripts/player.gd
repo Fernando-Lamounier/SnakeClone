@@ -7,6 +7,7 @@ var time_between_moves:float = 1000
 @onready var head: Head = %Head
 @onready var spawner: Spawner = %Spawner
 @onready var segment: Segment = %Segment
+@onready var borders: Borders = %borders
 
 
 @export var SPEED:float = 3000
@@ -40,6 +41,7 @@ func _physics_process(delta: float) -> void:
 func update_head():
 	var last_position = head.position
 	var new_position:Vector2 = head.position + direction * Global.GRID_SIZE
+	new_position = borders.warp_player(new_position)
 	head.move_to(new_position)
 	head.walked()
 	for i in snake_segment.size():

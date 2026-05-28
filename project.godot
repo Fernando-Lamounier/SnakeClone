@@ -22,6 +22,7 @@ Global="*uid://dmtwp2m6ydqcg"
 [global_group]
 
 food=""
+segments=""
 
 [physics]
 

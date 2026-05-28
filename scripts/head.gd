@@ -9,7 +9,7 @@ func _on_area_entered(area: Area2D) -> void:
 		area.queue_free()
 		food_eated.emit()
 		pass
-	else:
+	elif area.is_in_group("segments"):
 		if snake_walked:
 			player.game_over()
 			pass
