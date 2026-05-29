@@ -9,8 +9,8 @@ var segment_scene:PackedScene = preload("res://scenes/segment.tscn")
 # spawna comida
 func spawn_food():
 	var spawn_point: Vector2 = Vector2.ZERO
-	spawn_point.x = randi_range(borders.x_min, borders.x_max) * Global.GRID_SIZE % int(borders.x_max)
-	spawn_point.y = randi_range(borders.y_min, borders.y_max) * Global.GRID_SIZE % int(borders.y_max)
+	spawn_point.x = int(randi_range(borders.x_min, borders.x_max) / Global.GRID_SIZE) * Global.GRID_SIZE 
+	spawn_point.y = int(randi_range(borders.y_min, borders.y_max) / Global.GRID_SIZE) * Global.GRID_SIZE
 	
 	var food = food_scene.instantiate()
 	food.position = spawn_point

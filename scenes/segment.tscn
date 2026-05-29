@@ -8,6 +8,7 @@
 height = 20.0
 
 [node name="Segment" type="Area2D" unique_id=2041569768]
+scale = Vector2(2, 2)
 script = ExtResource("1_th87o")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1938380057]

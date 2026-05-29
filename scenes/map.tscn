@@ -9,3 +9,4 @@
 unique_name_in_owner = true
 
 [node name="Player" parent="." unique_id=2059443134 instance=ExtResource("1_paxxb")]
+position = Vector2(1, 1)

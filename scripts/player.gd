@@ -12,7 +12,7 @@ var time_between_moves:float = 1000
 
 @export var SPEED:float = 3000
 var snake_segment:Array[Segment] = []
-var direction: Vector2 = Vector2.RIGHT
+var direction: Vector2 = Vector2.DOWN
 
 func _ready() -> void:
 	snake_segment.append(segment)
@@ -50,7 +50,6 @@ func update_head():
 			new_position = snake_segment[i].position
 			snake_segment[i].move_to(last_position)
 			last_position = new_position
-			
 			pass
 		pass
 	

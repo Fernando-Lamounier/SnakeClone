@@ -8,6 +8,7 @@
 height = 20.0
 
 [node name="Head" type="Area2D" unique_id=1658098063]
+scale = Vector2(2, 2)
 script = ExtResource("1_nsfte")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=59384311]

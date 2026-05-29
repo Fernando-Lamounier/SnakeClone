@@ -12,7 +12,7 @@ script = ExtResource("1_qhqgy")
 [node name="Head" parent="." unique_id=1658098063 instance=ExtResource("2_dqkch")]
 unique_name_in_owner = true
 
-[node name="Segment" parent="." unique_id=2041569768 groups=["segments"] instance=ExtResource("3_qhqgy")]
+[node name="Segment" parent="." unique_id=2041569768 instance=ExtResource("3_qhqgy")]
 unique_name_in_owner = true
 
 [node name="Spawner" type="Node2D" parent="." unique_id=357328250]
@@ -25,12 +25,12 @@ script = ExtResource("4_dqkch")
 unique_name_in_owner = true
 script = ExtResource("5_qlg0r")
 
-[node name="uper_left" type="Marker2D" parent="borders" unique_id=999811530]
+[node name="uper_left" type="Marker2D" parent="borders" unique_id=999811530 groups=["borders"]]
 unique_name_in_owner = true
-position = Vector2(-576, -324)
+position = Vector2(-960, -540)
 
-[node name="lower_right" type="Marker2D" parent="borders" unique_id=1904711756]
+[node name="lower_right" type="Marker2D" parent="borders" unique_id=1904711756 groups=["borders"]]
 unique_name_in_owner = true
-position = Vector2(576, 324)
+position = Vector2(960, 540)
 
 [connection signal="food_eated" from="Head" to="." method="_on_head_food_eated"]

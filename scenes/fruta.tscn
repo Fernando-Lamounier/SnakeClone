@@ -8,6 +8,7 @@
 height = 20.0
 
 [node name="Fruta" type="Area2D" unique_id=1240248615 groups=["food"]]
+scale = Vector2(2, 2)
 script = ExtResource("1_ch7q4")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1525013617]
